@@ -26,7 +26,7 @@ gulp.task('css', () => {
 		.pipe(minifyCSS())
 		.pipe(autoprefixer())
 		.pipe(concat('projectName.min.css'))
-		.pipe(gulp.dest('assets/js'))
+		.pipe(gulp.dest('assets'))
 		.pipe(browserSync.stream());
 });
 
@@ -35,7 +35,7 @@ gulp.task('js', () => {
 	return gulp.src(['assets/js/theme.js'])
 		.pipe(concat('projectName.min.js'))
 		.pipe(minifyJS())
-		.pipe(gulp.dest('assets/css'))
+		.pipe(gulp.dest('assets'))
 		.pipe(browserSync.stream());
 });
 
