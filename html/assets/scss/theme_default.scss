@@ -13,10 +13,10 @@
 }
 body {
     font-size: $f-size-base;
-    font-weight: $f-weight-regular;
     font-family: $f-family-base;
     color: $primary;
-    line-height: $body-line-height;
+    line-height: 1.6;
+    font-weight: 400;
     overflow-x:hidden;
     letter-spacing:.2px;
 }
@@ -36,11 +36,12 @@ h3,
 h4,
 h5,
 h6{
-    font-weight: $f-weight-regular;
-    line-height: $heading-line-height;
+    
     margin: $h-margin;
     color:$secondary;
     letter-spacing:2px;
+    font-weight: 500;
+    line-height: 1.5;
 }
 h1 {
     font-size: $f-size-h1;
@@ -80,11 +81,10 @@ button{
     transition: all 0.25s ease-in-out;
 }
 p {
-    font-size: $paragraph-f-size;
-    font-family: $paragraph-f-family;
-    font-weight: $paragraph-f-weight;
-    line-height: $paragraph-line-height;
-    margin-bottom:25px;
+    font-size: $f-size-base;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom:20px;
 }
 .content-wrap {
     padding: $content-wrap-padding;
